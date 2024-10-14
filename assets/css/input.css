@@ -49,6 +49,12 @@
   }
 }
 
+@layer utilities {
+  .w-webkit-fill {
+    width: -webkit-fill-available;
+  }
+}
+
 /* these two classes are used to hide scroll bars when needed */
 .hideScroll {
   -ms-overflow-style: none;

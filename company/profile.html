@@ -657,7 +657,7 @@
                     </div>
                 </main>
                 <div id="content">
-                    <div class="one md:w-[76rem] mx-auto mt-5 mb-8">
+                    <div class="one mx-auto mt-5 px-4 mb-8">
                         <div class="flex justify-between rounded-t-lg px-2 py-4 border-t border-x items-center">
                             <h6 class="font-semibold">بلیط ها</h6>
                             <div class="flex items-center gap-5">
@@ -669,12 +669,80 @@
                                         alt="..."><span>خروجی</span></div><span>14 سند</span>
                             </div>
                         </div>
-                        <div class="w-full overflow-auto">
-                            <table class="table-auto border-collapse overflow-scroll rounded-b-lg border w-full">
-                                <thead class="text-[14px] uppercase">
-                                    <tr>
-                                        <th class="p-2 whitespace-nowrap flex justify-center">
-                                            <div class="text-start">
+
+                            <main class="w-full overflow-x-auto">
+                                <table class="table border-collapse rounded-b-lg border w-max table-fixed">
+                                    <thead class="text-[14px] uppercase">
+                                        <tr>
+                                            <th class="p-2 flex justify-center">
+                                                <div class="text-start">
+                                                    <div class="inline-flex items-center"><label
+                                                            class="relative flex items-center rounded-full cursor-pointer"
+                                                            for="checkbox"><!-- before:h-12 before:w-12 --><input
+                                                                type="checkbox"
+                                                                class="before:content[''] peer relative h-6 w-6 cursor-pointer appearance-none rounded-md border-blue-gray-200 transition-all before:absolute before:top-2/4 before:left-2/4 before:block before:-translate-y-2/4 before:-translate-x-2/4 before:rounded-full bg-[#F0F1F2] before:bg-gray-500 before:opacity-0 before:transition-opacity checked:border-[#0A77FF] checked:bg-[#0A77FF] checked:before:bg-[#0A77FF] hover:before:opacity-10"
+                                                                id="checkbox"><span
+                                                                class="absolute text-white transition-opacity opacity-0 pointer-events-none top-2/4 left-2/4 -translate-y-2/4 -translate-x-2/4 peer-checked:opacity-100"><svg
+                                                                    xmlns="http://www.w3.org/2000/svg" class="h-3.5 w-3.5"
+                                                                    viewBox="0 0 20 20" fill="currentColor"
+                                                                    stroke="currentColor" stroke-width="1">
+                                                                    <path fill-rule="evenodd"
+                                                                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                                                        clip-rule="evenodd"></path>
+                                                                </svg></span></label></div>
+                                                </div>
+                                            </th>
+                                            <th class="p-2  border">
+                                                <div class="text-start">ردیف</div>
+                                            </th>
+                                            <th class="p-2  border">
+                                                <div class="text-start">مسافرین</div>
+                                            </th>
+                                            <th class="p-2 p border">
+                                                <div class="text-start">سایت</div>
+                                            </th>
+                                            <th class="p-2  border">
+                                                <div class="text-start">یوزر</div>
+                                            </th>
+                                            <th class="p-2  border">
+                                                <div class="text-start">تاریخ و ساعت رزرو</div>
+                                            </th>
+                                            <th class="p-2  border">
+                                                <div class="text-start">کد آژانس</div>
+                                            </th>
+                                            <th class="p-2  border">
+                                                <div class="text-start">تامین کننده و رفرنس</div>
+                                            </th>
+                                            <th class="p-2  border">
+                                                <div class="text-start">تیکت ID</div>
+                                            </th>
+                                            <th class="p-2  border">
+                                                <div class="text-start">وضعیت</div>
+                                            </th>
+                                            <th class="p-2  border">
+                                                <div class="text-start">مسیر</div>
+                                            </th>
+                                            <th class="p-2  border">
+                                                <div class="text-start">ایرلاین</div>
+                                            </th>
+                                            <th class="p-2 border">
+                                                <div class="text-start">تاریخ و ساعت</div>
+                                            </th>
+                                            <th class="p-2  border">
+                                                <div class="text-start">مبلغ کل</div>
+                                            </th>
+                                            <th class="p-2  border">
+                                                <div class="text-start">کمیسون</div>
+                                            </th>
+                                            <th class="p-2  border">
+                                                <div class="text-start"></div>
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody class="text-sm">
+                                        <tr
+                                            class="hover:bg-gray-100 text-[#605D64] text-sm transition-all border hover:transition-all">
+                                            <td class="px-2 flex justify-center py-4 ">
                                                 <div class="inline-flex items-center"><label
                                                         class="relative flex items-center rounded-full cursor-pointer"
                                                         for="checkbox"><!-- before:h-12 before:w-12 --><input
@@ -689,118 +757,51 @@
                                                                     d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
                                                                     clip-rule="evenodd"></path>
                                                             </svg></span></label></div>
-                                            </div>
-                                        </th>
-                                        <th class="p-2 whitespace-nowrap border">
-                                            <div class="text-start">ردیف</div>
-                                        </th>
-                                        <th class="p-2 whitespace-nowrap border">
-                                            <div class="text-start">مسافرین</div>
-                                        </th>
-                                        <th class="p-2 whitespace-nowrap border">
-                                            <div class="text-start">سایت</div>
-                                        </th>
-                                        <th class="p-2 whitespace-nowrap border">
-                                            <div class="text-start">یوزر</div>
-                                        </th>
-                                        <th class="p-2 whitespace-nowrap border">
-                                            <div class="text-start">تاریخ و ساعت رزرو</div>
-                                        </th>
-                                        <th class="p-2 whitespace-nowrap border">
-                                            <div class="text-start">کد آژانس</div>
-                                        </th>
-                                        <th class="p-2 whitespace-nowrap border">
-                                            <div class="text-start">تامین کننده و رفرنس</div>
-                                        </th>
-                                        <th class="p-2 whitespace-nowrap border">
-                                            <div class="text-start">تیکت ID</div>
-                                        </th>
-                                        <th class="p-2 whitespace-nowrap border">
-                                            <div class="text-start">وضعیت</div>
-                                        </th>
-                                        <th class="p-2 whitespace-nowrap border">
-                                            <div class="text-start">مسیر</div>
-                                        </th>
-                                        <th class="p-2 whitespace-nowrap border">
-                                            <div class="text-start">ایرلاین</div>
-                                        </th>
-                                        <th class="p-2 whitespace-nowrap border">
-                                            <div class="text-start">تاریخ و ساعت</div>
-                                        </th>
-                                        <th class="p-2 whitespace-nowrap border">
-                                            <div class="text-start">مبلغ کل</div>
-                                        </th>
-                                        <th class="p-2 whitespace-nowrap border">
-                                            <div class="text-start">کمیسون</div>
-                                        </th>
-                                        <th class="p-2 whitespace-nowrap border">
-                                            <div class="text-start"></div>
-                                        </th>
-                                    </tr>
-                                </thead>
-                                <tbody class="text-sm">
-                                    <tr
-                                        class="hover:bg-gray-100 text-[#605D64] text-sm transition-all border hover:transition-all">
-                                        <td class="px-2 flex justify-center py-4 whitespace-nowrap">
-                                            <div class="inline-flex items-center"><label
-                                                    class="relative flex items-center rounded-full cursor-pointer"
-                                                    for="checkbox"><!-- before:h-12 before:w-12 --><input
-                                                        type="checkbox"
-                                                        class="before:content[''] peer relative h-6 w-6 cursor-pointer appearance-none rounded-md border-blue-gray-200 transition-all before:absolute before:top-2/4 before:left-2/4 before:block before:-translate-y-2/4 before:-translate-x-2/4 before:rounded-full bg-[#F0F1F2] before:bg-gray-500 before:opacity-0 before:transition-opacity checked:border-[#0A77FF] checked:bg-[#0A77FF] checked:before:bg-[#0A77FF] hover:before:opacity-10"
-                                                        id="checkbox"><span
-                                                        class="absolute text-white transition-opacity opacity-0 pointer-events-none top-2/4 left-2/4 -translate-y-2/4 -translate-x-2/4 peer-checked:opacity-100"><svg
-                                                            xmlns="http://www.w3.org/2000/svg" class="h-3.5 w-3.5"
-                                                            viewBox="0 0 20 20" fill="currentColor"
-                                                            stroke="currentColor" stroke-width="1">
-                                                            <path fill-rule="evenodd"
-                                                                d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                                                                clip-rule="evenodd"></path>
-                                                        </svg></span></label></div>
-                                        </td>
-                                        <td class="px-2 border py-4 whitespace-nowrap">1</td>
-                                        <td class="px-2 py-4 flex justify-center whitespace-nowrap"><img
-                                                src="/icon/add.svg" alt=""></td>
-                                        <td class="px-2 border py-4 whitespace-nowrap text-[#0A77FF] underline">
-                                            CrsTrip.
-                                        </td>
-                                        <td class="px-2 border py-4 whitespace-nowrap text-[#0A77FF] underline">
-                                            Hossein_
-                                        </td>
-                                        <td class="px-2 border py-4 whitespace-nowrap">20/02/1403 - 22:30</td>
-                                        <td class="px-2 border py-4 whitespace-nowrap">569874516</td>
-                                        <td class="px-2 border py-4 whitespace-nowrap">پرتو - 4565</td>
-                                        <td class="px-2 border py-4 whitespace-nowrap">1359821</td>
-                                        <td class="px-1 bg-[#FFE2E8] border py-4 whitespace-nowrap">
-                                            <div class="flex justify-between"><span> خطا </span><img src="/icon/add.svg"
-                                                    alt="" />
-                                            </div>
-                                        </td>
-                                        <td class="px-2 border py-4 whitespace-nowrap">مشهد به نجف</td>
-                                        <td class="px-2 border py-4 whitespace-nowrap">ماهان</td>
-                                        <td class="px-2 border py-4 whitespace-nowrap">20/02/1403 - 22:30</td>
-                                        <td class="px-2 border py-4 whitespace-nowrap">
-                                            12،000،000 تومان
-                                        </td>
-                                        <td class="px-2 border py-4 whitespace-nowrap">20،000 تومان</td>
-                                        <td class="px-2 border py-4 whitespace-nowrap">
-                                            <div class="flex items-center gap-2">
-                                                <button class="btn-outline">
-                                                    بازگشت وجه
-                                                </button>
-                                                <button class="btn-outline">
-                                                    استرداد
-                                                </button>
-                                                <button class="btn-outline">
-                                                    بازسازی بلیط
-                                                </button>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
+                                            </td>
+                                            <td class="px-2 border py-4 ">1</td>
+                                            <td class="px-2 py-4 flex justify-center "><img
+                                                    src="/icon/add.svg" alt=""></td>
+                                            <td class="px-2 border py-4  text-[#0A77FF] underline">
+                                                CrsTrip.
+                                            </td>
+                                            <td class="px-2 border py-4  text-[#0A77FF] underline">
+                                                Hossein_
+                                            </td>
+                                            <td class="px-2 border py-4">20/02/1403 - 22:30</td>
+                                            <td class="px-2 border py-4 ">569874516</td>
+                                            <td class="px-2 border py-4 ">پرتو - 4565</td>
+                                            <td class="px-2 border py-4 ">1359821</td>
+                                            <td class="px-1 bg-[#FFE2E8] border py-4 ">
+                                                <div class="flex justify-between"><span> خطا </span><img src="/icon/add.svg"
+                                                        alt="" />
+                                                </div>
+                                            </td>
+                                            <td class="px-2 border py-4 ">مشهد به نجف</td>
+                                            <td class="px-2 border py-4">ماهان</td>
+                                            <td class="px-2 border py-4 ">20/02/1403 - 22:30</td>
+                                            <td class="px-2 border py-4 ">
+                                                12،000،000 تومان
+                                            </td>
+                                            <td class="px-2 border py-4">20،000 تومان</td>
+                                            <td class="px-2 border py-4 ">
+                                                <div class="flex items-center gap-2">
+                                                    <button class="btn-outline">
+                                                        بازگشت وجه
+                                                    </button>
+                                                    <button class="btn-outline">
+                                                        استرداد
+                                                    </button>
+                                                    <button class="btn-outline">
+                                                        بازسازی بلیط
+                                                    </button>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                        </main>
                     </div>
-
+                    
 
                     <div class="overflow-x-auto hidden two px-4 mx-auto mt-5 mb-8">
                         <div class="flex justify-between rounded-t-lg px-2 py-4 border-t border-x items-center">
